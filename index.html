@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Playlist Grid</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Azeret Mono', monospace; 
+            background-color: #780001; 
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 25px 20px; 
+            width: 100%;
+            max-width: 1200px; 
+        }
+
+        .video {
+            background-color: #06003C; 
+            padding: 10px;
+            border-radius: 12px; 
+            border: 4px solid #fff9ce; 
+            box-shadow: 0 6px 0px 0 rgba(255, 253, 207, 1); 
+            text-align: center; 
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+        }
+
+        .video img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            object-fit: cover; 
+            aspect-ratio: 16 / 9;
+            transform: translateX(0) translateY(-2px);
+        }
+
+        .video:hover {
+            transform: scale(1.04);
+        }
+
+        .video:active {
+            box-shadow: 0 0px 0px 0 rgba(255, 253, 207, 1);
+            transform: translateY(6px);
+        }
+
+        h1 {
+            font-family: 'Azeret Mono', monospace; 
+            color: #fff9ce; 
+            margin: 0; 
+            padding: 0; 
+        }
+
+        h2 {
+            font-family: 'Azeret Mono', monospace; 
+            color: #ffdb93; 
+            margin: 0; 
+            padding-bottom: 3px; 
+            padding-top: 3px;
+        }
+
+        h3 {
+            font-family: 'Azeret Mono', monospace; 
+            color: #ffc1c1; 
+            margin: 0; 
+            padding-bottom: 20px; 
+            padding-top: 3px; 
+        }
+
+        p {
+            font-weight: 550;
+            margin: 6px; 
+            padding-bottom: 6px; 
+            padding-top: 6px; 
+            color: #fff9ce; 
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://www.youtube.com/@KaziAidahHaque/playlists" style="text-decoration: none;">
+        <h1><u>ALL TUTORIALS</u></h1>
+    </a>
+    
+    <h2>By Kazi Aidah Haque</h2>
+    <h3>[ Tutorial Count: 356 ]</h3>
+    <div id="video-grid" class="video-grid"></div>
+
+    <script src="script.js"></script>
+
+    
+
+</body>
+</html>
