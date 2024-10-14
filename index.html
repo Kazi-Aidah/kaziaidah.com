@@ -9,8 +9,8 @@
     
     <style>
         body {
-            font-family: 'Azeret Mono', monospace; 
-            background-color: #780001; 
+            font-family: 'Azeret Mono', monospace;
+            background-color: #780001;
             padding: 20px;
             display: flex;
             justify-content: center;
@@ -21,29 +21,30 @@
 
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 25px 20px; 
+            grid-template-columns: repeat(auto-fill, 300px);
+            gap: 25px 20px;
+            justify-content: center;
             width: 100%;
-            max-width: 1200px; 
+            max-width: 2000px;
         }
 
         .video {
-            background-color: #06003C; 
+            background-color: #06003C;
             padding: 10px;
-            border-radius: 12px; 
-            border: 4px solid #fff9ce; 
-            box-shadow: 0 6px 0px 0 rgba(255, 253, 207, 1); 
-            text-align: center; 
+            border-radius: 12px;
+            border: 4px solid #fff9ce;
+            box-shadow: 0 6px 0px 0 rgba(255, 253, 207, 1);
+            text-align: center;
             display: flex;
-            flex-direction: column; 
-            align-items: center; 
+            flex-direction: column;
+            align-items: center;
         }
 
         .video img {
             width: 100%;
             height: auto;
             border-radius: 6px;
-            object-fit: cover; 
+            object-fit: cover;
             aspect-ratio: 16 / 9;
             transform: translateX(0) translateY(-2px);
         }
@@ -58,34 +59,34 @@
         }
 
         h1 {
-            font-family: 'Azeret Mono', monospace; 
-            color: #fff9ce; 
-            margin: 0; 
-            padding: 0; 
+            font-family: 'Azeret Mono', monospace;
+            color: #fff9ce;
+            margin: 0;
+            padding: 0;
         }
 
         h2 {
-            font-family: 'Azeret Mono', monospace; 
-            color: #ffdb93; 
-            margin: 0; 
-            padding-bottom: 3px; 
+            font-family: 'Azeret Mono', monospace;
+            color: #ffdb93;
+            margin: 0;
+            padding-bottom: 3px;
             padding-top: 3px;
         }
 
         h3 {
-            font-family: 'Azeret Mono', monospace; 
-            color: #ffc1c1; 
-            margin: 0; 
-            padding-bottom: 20px; 
-            padding-top: 3px; 
+            font-family: 'Azeret Mono', monospace;
+            color: #ffc1c1;
+            margin: 0;
+            padding-bottom: 20px;
+            padding-top: 3px;
         }
 
         p {
             font-weight: 550;
-            margin: 6px; 
-            padding-bottom: 6px; 
-            padding-top: 6px; 
-            color: #fff9ce; 
+            margin: 6px;
+            padding-bottom: 6px;
+            padding-top: 6px;
+            color: #fff9ce;
         }
     </style>
 </head>
@@ -100,8 +101,6 @@
     <div id="video-grid" class="video-grid"></div>
 
     <script src="script.js"></script>
-
-    
 
 </body>
 </html>
